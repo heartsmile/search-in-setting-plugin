@@ -23,9 +23,10 @@ Installation
      at the command prompt (on Linux, Windows is a bit different)
    - To download directly, go to the `project page`_ and click **Download**
 
-#. Go to **Admin -> Plugins** on your q2a install and select the '**Search In Setting**' option, then '**Save Changes**'.
+#. Go to **Admin -> Plugins** on your q2a install and select the '**Search In Setting**' option, then '**Save Changes**'
 #. Go to page admin/layout and find "Search In Setting Widget", click add widget, choose location and page then save all changes
 #. Note: You must enter your home page url correctly at "Preferred site URL:", which is in admin/general page.
+
 .. _Question2Answer: http://www.question2answer.org/install.php
 .. _git: http://git-scm.com/
 .. _github:
