@@ -59,8 +59,13 @@ class qa_search_setting_result {
 			$qa_content['custom'] .= 
 			'<table border=1 id="result_ss">'
 			.' <tr> '
+<<<<<<< HEAD
 				.'<th width = "150">'.qa_lang_html('plugin_s_setting/site_name_table').'</th>'
 				.' <th  width = "550">'.qa_lang_html('plugin_s_setting/option_name_table').'</th>'
+=======
+				.'<th width = "70">'.qa_lang_html('plugin_s_setting/site_name_table').'</th>'
+				.' <th  width = "630">'.qa_lang_html('plugin_s_setting/option_name_table').'</th>'
+>>>>>>> cd07be2b973fac8064b53f7d947f9f80cab8d08c
 			.' </tr>';
 			foreach($arr_result as $arr){
 				if($count < (int)qa_opt('plugin_ss_table_lengh')){
