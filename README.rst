@@ -19,7 +19,10 @@ Features
 Installation
 ------------
 
-**In brief**
+========
+In brief
+========
+
 #. Install question2answer site
 #. Add `search-in-setting` plugin to the site by copying to `qa-plugin` folder
 #. Turn it on via `Plugins` and `Layout` site in Admin page
