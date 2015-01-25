@@ -1,64 +1,86 @@
 ==============================
 Search In Setting Plugin
 ==============================
+
 -----------
 Description
 -----------
-Plugin help admin to search settings from admin page of **Question2Answer**
+This plugin helps administrators to search for setting items from Admin page of a question2answer_ page - the search box works similarly to Chrome browser preference search feature.
+
+.. _question2answer: http://question2answer.org
 
 --------
 Features
 --------
-- Add search box into admin page
-- Search and show result in another page
-- Navigate to admin site that have correspond setting
-------------
-Installation
-------------
-#. Install Question2Answer_
-#. Get the source code for this plugin from github_, either using git_, or downloading directly:
+- Add search box to admin page
+- Search and show results in another page
+- Navigate to admin site/sub-page that contains the corresponding setting
 
-   - To download using git, install git and then type 
-     ``git clone git@github.com:heartsmile/search-in-setting-plugin.git``
-     at the command prompt (on Linux, Windows is a bit different)
-   - To download directly, go to the `project page`_ and click **Download**
+-----------------------
+Installation - In brief
+-----------------------
 
-#. Go to **Admin -> Plugins** on your q2a install and select the '**Search In Setting**' option, then '**Save Changes**'
-#. Go to **Admin -> Layout** and find "Search In Setting Widget", click add widget, choose location and page then save all changes
-#. **Note:** You must enter your home page url correctly at "Preferred site URL:", which is in admin/general page.
+#. Install question2answer site
+#. Add **search-in-setting** plugin to the site by copying to **qa-plugin** folder
+#. Turn it on via **Plugins** and **Layout** site under **Admin** page
+#. Done
 
-.. _Question2Answer: http://www.question2answer.org/install.php
-.. _git: http://git-scm.com/
-.. _github:
+-----------------------
+Installation - Full steps
+-----------------------
+
+*Install question2answer site*
+#. Install your q2a site by following question2answer.org guide_
+
+*Add **search-in-setting** plugin*
+
+#. Get the source code for this plugin from github_
+#. Copy it to **%q2aHOME%\qa-plugin** folder
+
+*Turn it on 1 of 2 - via Plugins*
+
+#. Go to **Admin -> Plugins** page of your installed question2answer site, we will see all plugins are listed here
+#. Locate **Search In Setting**, select **options**, make sure **Enable this plugin** is checked, and hit **Save Changes**
+
+*Turn it on 2 of 2 - via Layout*
+
+#. Go to **Admin -> Layout**, the widget **Search In Setting** should be listed there under **Available widgets**
+#. Hit **Add widget** to add our search box to the content layout
+#. Select where to display it in **Position** e.g. 'Main area - Top'
+#. Check the following page checkboxes to select pages to display e.g. 'Show widget in this position on all available pages' for all pages
+#. Hit **Save options**
+
+----
+Note
+----
+In **Admin - General** page, at **Preferred site URL**, the URL of your q2a home page should be copied there correctly.
+E.g. if your published page is at http://demo.question2answer.org/ then this exact URL should be used in **Preferred site URL**.
+This helps to display the search result page properly.
+
+.. _guide: http://www.question2answer.org/install.php
+.. _github: https://github.com/heartsmile/search-in-setting-plugin
 .. _project page: https://github.com/heartsmile/search-in-setting-plugin
 
 -----------
 Translation
 -----------
 
-.. _Translation:
+The translation file is **qa-search-setting-lang-default.php**.
 
-The translation file is **qa-search-setting-lang-default.php**.  Copy this file and rename it to **qa-search-setting-lang-<your_language>.php**.  Edit the right-hand side strings in this file with notepad2, notepad++, etc. (don't ever use Window's Notepad. For anything. Ever.), for example, changing:
+Copy this file and rename it to **qa-search-setting-lang-<your_language_code>.php** e.g. **qa-search-setting-lang-vi.php** for Vietnamese.
 
-**'placeholder_text'=>'Search Setting',**
+E.g. **'placeholder_text'=>'Search Setting',** in English to be translated to Vietnamese by **'placeholder_text'=>'Tìm kiếm cài đặt',**
 
-to
+See here for more about translation_
 
-**'placeholder_text'=>'Tìm kiếm cài đặt',**
+.. _translation: http://www.question2answer.org/translate.php
 
-for Vietnamese.  Don't edit the string on the left-hand side or bad things will happen.
-
-Once you've completed the translation, don't forget to set the site language in the admin control panel... to Vietnamese.
-This plugin supported Vietnamese in **qa-search-setting-lang-vi.php** file.
-
------------
+-------
 Release
------------
-- This is the first version, and it run well on Q2A 1.6
+-------
+This is the first version, and it run well on question2answer version 1.7
 
 -----------
 About Question2Answer
 -----------
-- Question2Answer is a free and open source platform for Q&A sites. For more information, visit:
-
-http://www.question2answer.org/
+Question2Answer is a free and open source platform for Q&A sites. For more information, visit http://www.question2answer.org/

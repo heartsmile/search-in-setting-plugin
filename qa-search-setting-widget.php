@@ -59,17 +59,43 @@
 				if((bool)qa_opt('plugin_ss_is_enable'))
 				{
 					//create table to save data
-					$result=qa_db_query_sub('CREATE TABLE IF NOT EXISTS `qa_plugin_setting` (
+					$result1=qa_db_query_sub('CREATE TABLE IF NOT EXISTS `qa_plugin_setting` (
 										`id` int NOT NULL AUTO_INCREMENT,
 										`site` varchar(100) NOT NULL,
 										`key_word` varchar(100) NOT NULL,
 										`value` varchar(500) character set utf8,
+										PRIMARY KEY (`id`))');
+					$result2=qa_db_query_sub('CREATE TABLE IF NOT EXISTS `qa_plugin_ss_site` (
+										`id` int NOT NULL AUTO_INCREMENT,
+										`site` varchar(100) NOT NULL,
+										`key_word` varchar(100) NOT NULL,
+										`site_name` varchar(100) character set utf8,
 										PRIMARY KEY (`id`))');
 										
 					//if not insert data yet
 					if(!(bool)qa_opt('plugin_ss_data_inserted')) {
 						qa_opt('plugin_ss_data_inserted',true);
 						//insert value
+						//site title
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("general", "general_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("emails", "emails_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("users", "users_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("layout", "layout_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("posting", "posting_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("viewing", "viewing_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("lists", "lists_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("categories", "categories_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("permissions", "permissions_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("pages", "pages_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("feeds", "feeds_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("points", "points_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("spam", "spam_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("stats", "stats_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("mailing", "mailing_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("plugins", "plugins_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("moderate", "moderate_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("flagged", "flagged_title")');
+						qa_db_query_sub('INSERT INTO `qa_plugin_ss_site` (`site`,`key_word`) VALUES ("hidden", "hidden_title")');
 						
 						//general
 						qa_db_query_sub('INSERT INTO `qa_plugin_setting` (`site`,`key_word`) VALUES ("general", "site_language")');

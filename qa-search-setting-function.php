@@ -25,6 +25,7 @@ function update_database_value($lang){
 	}
 	foreach($array_admin as $key_word => $value){
 		qa_db_query_sub('UPDATE `qa_plugin_setting` SET `value` = $ WHERE `key_word` = $ ',$value, $key_word);
+		qa_db_query_sub('UPDATE `qa_plugin_ss_site` SET `site_name` = $ WHERE `key_word` = $ ',$value, $key_word);
 	}
 	foreach($array_profile as $key_word => $value){
 		qa_db_query_sub('UPDATE `qa_plugin_setting` SET `value` = $ WHERE `key_word` = $ ',$value, $key_word);
