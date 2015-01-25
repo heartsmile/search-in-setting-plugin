@@ -15,20 +15,19 @@ Features
 - Search and show results in another page
 - Navigate to admin site/sub-page that contains the corresponding setting
 
-------------
-Installation
-------------
-
-========
-In brief
-========
+-----------------------
+Installation - In brief
+-----------------------
 
 #. Install question2answer site
 #. Add `search-in-setting` plugin to the site by copying to `qa-plugin` folder
 #. Turn it on via `Plugins` and `Layout` site in Admin page
 #. Done
 
-**Full steps**
+-----------------------
+Installation - Full steps
+-----------------------
+
 (Install question2answer site)
 #. Install your q2a site by following question2answer.org guide_
 
