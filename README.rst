@@ -29,28 +29,31 @@ Installation - In brief
 Installation - Full steps
 -----------------------
 
-# Install question2answer site
-
+*Install question2answer site*
 #. Install your q2a site by following question2answer.org guide_
 
-# Add `search-in-setting` plugin
+*Add `search-in-setting` plugin*
 
 #. Get the source code for this plugin from github_
 #. Copy it to %q2aHOME%\qa-plugin folder
 
-(Turn it on 1 of 2 - via Plugins)
+*Turn it on 1 of 2 - via Plugins*
+
 #. Go to **Admin -> Plugins** page of your installed question2answer site, we will see all plugins are listed here
 #. Locate **Search In Setting**, select `options`, make sure `Enable this plugin` is chcked, and hit **Save Changes**
 
-(Turn it on 2 of 2 - via Layout)
+*Turn it on 2 of 2 - via Layout*
 #. Go to **Admin -> Layout**, the widget **Search In Setting** should be listed there under `Available widgets`
 #. Hit `Add widget` to add our `search box` to the contentlayout,
 #. Select where to display it e.g. `Main area - Top`
 #. Select in which pages to display e.g. `Show widget in this position on all available pages` for all pages
 #. Hit `Save options`
 
-**Note:** 
-You must enter your home page url correctly at "Preferred site URL:", which is in admin/general page.
+----
+Note
+----
+In **Admin - General** page, at "Preferred site URL:", the URL of your q2a home page should be copied there correctly.
+E.g. if your published page is at http://demo.question2answer.org/ then the exact URL "http://demo.question2answer.org/" should be used.
 
 .. _guide: http://www.question2answer.org/install.php
 .. _github: https://github.com/heartsmile/search-in-setting-plugin
