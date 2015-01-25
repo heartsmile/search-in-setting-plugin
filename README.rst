@@ -30,6 +30,7 @@ Installation - Full steps
 -----------------------
 
 *Install question2answer site*
+
 #. Install your q2a site by following question2answer.org guide_
 
 *Add **search-in-setting** plugin*
@@ -54,7 +55,9 @@ Installation - Full steps
 Note
 ----
 In **Admin - General** page, at **Preferred site URL**, the URL of your q2a home page should be copied there correctly.
-E.g. if your published page is at http://demo.question2answer.org/ then this exact URL should be used in **Preferred site URL**.
+
+E.g. If your published page is at http://demo.question2answer.org/, then this exact URL should be used in **Preferred site URL** box.
+
 This helps to display the search result page properly.
 
 .. _guide: http://www.question2answer.org/install.php
@@ -69,11 +72,13 @@ The translation file is **qa-search-setting-lang-default.php**.
 
 Copy this file and rename it to **qa-search-setting-lang-<your_language_code>.php** e.g. **qa-search-setting-lang-vi.php** for Vietnamese.
 
-E.g. **'placeholder_text'=>'Search Setting',** in English to be translated to Vietnamese by **'placeholder_text'=>'Tìm kiếm cài đặt',**
+One translation sample as below.
 
-See here for more about translation_
+**'placeholder_text'=>'Search Setting',** in English to be translated to Vietnamese by **'placeholder_text'=>'Tìm kiếm cài đặt',**
 
-.. _translation: http://www.question2answer.org/translate.php
+See here_ for more details on q2a translation
+
+.. _here: http://www.question2answer.org/translate.php
 
 -------
 Release
