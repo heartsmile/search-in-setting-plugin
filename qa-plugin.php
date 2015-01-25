@@ -1,16 +1,16 @@
 <?php
 
 /*
-	Plugin Name: Search Setting
-	Plugin URI: https://github.com/heartsmile/search-setting-plugin
+	Plugin Name: Search In Setting
+	Plugin URI: https://github.com/heartsmile/search-in-setting-plugin
 	Plugin Description: Search a setting in administrator panel quickly
-	Plugin Version: 1.0
+	Plugin Version: 1.2
 	Plugin Date: 2014-11-10
-	Plugin Author: NHQT group
+	Plugin Author: NTHQ group
 	Plugin Author URI: http://www.facebook.com/heartsmile79
 	Plugin License: GPLv2
 	Plugin Minimum Question2Answer Version: 1.5
-	Plugin Update Check URI: https://github.com/heartsmile/search-setting-plugin
+	Plugin Update Check URI: https://github.com/heartsmile/search-in-setting-plugin
 */
 
 if (!defined('QA_VERSION')) { // don't allow this page to be requested directly from browser
