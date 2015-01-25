@@ -43,6 +43,7 @@ Installation - Full steps
 #. Locate **Search In Setting**, select `options`, make sure `Enable this plugin` is chcked, and hit **Save Changes**
 
 *Turn it on 2 of 2 - via Layout*
+
 #. Go to **Admin -> Layout**, the widget **Search In Setting** should be listed there under `Available widgets`
 #. Hit `Add widget` to add our `search box` to the contentlayout,
 #. Select where to display it e.g. `Main area - Top`
