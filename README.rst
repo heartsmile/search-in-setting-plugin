@@ -21,8 +21,8 @@ Installation - In brief
 -----------------------
 
 #. Install question2answer site
-#. Add `search-in-setting` plugin to the site by copying to `qa-plugin` folder
-#. Turn it on via `Plugins` and `Layout` site in Admin page
+#. Add *search-in-setting* plugin to the site by copying to **qa-plugin** folder
+#. Turn it on via **Plugins** and **Layout** site in Admin page
 #. Done
 
 -----------------------
@@ -32,7 +32,7 @@ Installation - Full steps
 *Install question2answer site*
 #. Install your q2a site by following question2answer.org guide_
 
-*Add `search-in-setting` plugin*
+*Add **search-in-setting** plugin*
 
 #. Get the source code for this plugin from github_
 #. Copy it to %q2aHOME%\qa-plugin folder
@@ -40,15 +40,15 @@ Installation - Full steps
 *Turn it on 1 of 2 - via Plugins*
 
 #. Go to **Admin -> Plugins** page of your installed question2answer site, we will see all plugins are listed here
-#. Locate **Search In Setting**, select `options`, make sure `Enable this plugin` is chcked, and hit **Save Changes**
+#. Locate **Search In Setting**, select **options**, make sure **Enable this plugin** is chcked, and hit **Save Changes**
 
 *Turn it on 2 of 2 - via Layout*
 
-#. Go to **Admin -> Layout**, the widget **Search In Setting** should be listed there under `Available widgets`
-#. Hit `Add widget` to add our `search box` to the contentlayout,
-#. Select where to display it e.g. `Main area - Top`
-#. Select in which pages to display e.g. `Show widget in this position on all available pages` for all pages
-#. Hit `Save options`
+#. Go to **Admin -> Layout**, the widget **Search In Setting** should be listed there under **Available widgets**
+#. Hit **Add widget** to add our **search box** to the contentlayout,
+#. Select where to display it e.g. **Main area - Top**
+#. Select in which pages to display e.g. **Show widget in this position on all available pages** for all pages
+#. Hit **Save options**
 
 ----
 Note
