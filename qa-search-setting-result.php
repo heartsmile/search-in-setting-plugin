@@ -44,7 +44,23 @@ class qa_search_setting_result {
 		if(count($arr_result)>0)
 		{
 			$count = 0;
-			$qa_content['custom'] .= '<table border=1 id="result_ss"> <tr> <th width = "70">'.qa_lang_html('plugin_s_setting/site_name_table').'</th> <th  width = "630">'.qa_lang_html('plugin_s_setting/option_name_table').'</th> </tr>';
+			
+			//styling the table
+			$qa_content['custom'] .= ''
+				.'<style>'
+				.'table#result_ss {border: 0px;border-color: lightgray;}'
+				.'table#result_ss th {border: 0px;font-size: smaller;}'
+				.'table#result_ss td {padding: 5px;}'				
+				.'</style>'
+			;
+			
+			//printing the table
+			$qa_content['custom'] .= 
+			'<table border=1 id="result_ss">'
+			.' <tr> '
+				.'<th width = "70">'.qa_lang_html('plugin_s_setting/site_name_table').'</th>'
+				.' <th  width = "630">'.qa_lang_html('plugin_s_setting/option_name_table').'</th>'
+			.' </tr>';
 			foreach($arr_result as $arr){
 				if($count < (int)qa_opt('plugin_ss_table_lengh')){
 					$qa_content['custom'] .= '<tr> <td>'.$arr['site'].'</td> <td> <a href="'.qa_opt('site_url').'/index.php/admin/'.$arr['site'].'">'.$arr['value'].'</a> </td> </tr>';
@@ -57,7 +73,7 @@ class qa_search_setting_result {
 		//no setting found
 		else
 		{
-			$qa_content['custom'] .= '<h3>'.qa_lang_html('plugin_s_setting/no_seting_found').'</h3>';
+			$qa_content['custom'] .= '<p>'.qa_lang_html('plugin_s_setting/no_seting_found').'</p>';
 		}
 
 		return $qa_content;
