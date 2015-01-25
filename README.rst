@@ -69,11 +69,9 @@ See here for more about translation_.
 -------
 Release
 -------
-- This is the first version, and it run well on Q2A 1.7
+This is the first version, and it run well on Q2A 1.7
 
 -----------
 About Question2Answer
 -----------
-- Question2Answer is a free and open source platform for Q&A sites. For more information, visit:
-
-http://www.question2answer.org/
+Question2Answer is a free and open source platform for Q&A sites. For more information, visit http://www.question2answer.org/
