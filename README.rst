@@ -28,7 +28,7 @@ Installation - In brief
 Installation - Full steps
 -----------------------
 
-(Install question2answer site)
+## Install question2answer site ##
 #. Install your q2a site by following question2answer.org guide_
 
 (Add `search-in-setting` plugin)
