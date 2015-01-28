@@ -343,6 +343,7 @@
 					
 					//delete table
 					$result=qa_db_query_sub('DROP TABLE IF EXISTS `qa_plugin_setting`');
+					$result1=qa_db_query_sub('DROP TABLE IF EXISTS `qa_plugin_ss_site`');
 				}
 			
 				$saved=true;
